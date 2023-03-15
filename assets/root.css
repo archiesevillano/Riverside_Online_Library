@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&display=swap');
+
+/* 
+    Brand Text - font-family: 'Montserrat', sans-serif;
+    Button Text - font-family: 'Quicksand', sans-serif;
+    Big Text - font-family: 'Lexend', sans-serif;
+    
+    Product Price - font-family: 'Rubik', sans-serif;
+
+    sale - font-family: 'Outfit', sans-serif;
+
+ */
+
+:root {
+    /* Brand theme colors */
+    --clean: #ffffff;
+    --bluish: #89c0c2;
+    --pinkish: #e59d9d;
+    --khaki: #cfbcab;
+    --greenish: #a5d8b2;
+    --reddish: #bd5555;
+    --plain: #ebebeb;
+
+    /*Brand name theme colors*/
+    --title-plain: #131212;
+    --title-highlight: #da3333;
+
+
+    /* Text default color */
+    --text-clr: #0a0a0a;
+    --text-gray-clr: #383838;
+    --text-highlight: #e22424;
+    --text-highlight1: rgb(42, 141, 67);
+
+    /*Icons default size */
+    --icon-size: 20px;
+
+    /* Links */
+    --link-clr: #21465f;
+
+
+    /*  Sale Tags */
+    --sale-percentage-clr: #319256;
+    --sale-tag: #0e0d0d;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}

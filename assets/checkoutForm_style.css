@@ -1,0 +1,126 @@
+body {
+    width: 100%;
+    padding: 40px 80px;
+    height: auto;
+}
+
+.checkout-page {
+    width: 100%;
+    height: auto;
+}
+
+.checkout-page .checkout-header {
+    width: 100%;
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.checkout-page .checkout-details {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 1fr;
+}
+
+.checkout-page .checkout-details .order-list-container {
+    background-color: skyblue;
+}
+
+.checkout-page .checkout-details .userform {
+    padding: 30px;
+}
+
+.checkout-details .order-list-container .header-title,
+.checkout-page .checkout-details .userform .userform-header {
+    font-family: 'Outfit', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 0 0 20px;
+}
+
+.checkout-details .userform .personal-info-container,
+.checkout-details .userform .address-container {
+    margin: 20px 0;
+}
+
+.checkout-details .userform .personal-info-container .personal-information-label,
+.checkout-details .userform .address-container .address-label {
+    margin: 50px 0;
+}
+
+
+.checkout-details .userform .personal-info-container .personal-information-label,
+.checkout-details .userform .address-container .address-label {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.checkout-details .userform .personal-info-container .age-sex-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+
+.checkout-details .userform .personal-info-container .age-sex-container .age-container,
+.checkout-details .userform .personal-info-container .age-sex-container .sex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout-details .userform .personal-info-container .checkout-heading,
+.checkout-details .userform .personal-info-container .age-sex-container .age-container .ageLabel,
+.checkout-details .userform .personal-info-container .age-sex-container .sex-container .sexLabel {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+}
+
+.checkout-details .userform .personal-info-container .fullname-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.checkout-details .userform .personal-info-container .fullname-container .personal-information-input {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.checkout-details .userform .personal-info-container .fullname-container .personal-information-input input[type=text] {
+    padding: 10px;
+    outline: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    color: var(--text-clr);
+    border: 2px solid #c0c0c0;
+}
+
+.checkout-details .userform .personal-info-container .fullname-container .personal-information-input .fullname-label {
+    font-family: 'Lexend', sans-serif;
+    font-size: 13px;
+    margin-top: 6px;
+}
+
+.checkout-details .userform .personal-info-container .age-sex-container .age-container .age-input::-webkit-outer-spin-button,
+.checkout-details .userform .personal-info-container .age-sex-container .age-container .age-input::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+
+}
+
+.checkout-details .userform .personal-info-container .age-sex-container .age-container .age-input,
+.checkout-details .userform .personal-info-container .age-sex-container .sex-container .sex-input {
+    padding: 10px;
+    outline: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    color: var(--text-clr);
+    border: 2px solid #c0c0c0;
+}
+
+.checkout-details .userform .personal-info-container .age-sex-container .sex-container .sex-input option {
+    font-weight: 600;
+}

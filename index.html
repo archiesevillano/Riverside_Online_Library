@@ -1,0 +1,1761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RiverSide</title>
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/root.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,200" />
+    <script defer src="https://kit.fontawesome.com/bbbef04b10.js" crossorigin="anonymous"></script>
+    <script defer type="text/javascript" src="assets/index.js"></script>
+</head>
+
+<body onload="init()">
+    <div class="page">
+        <header class="page-header">
+            <div class="brand-container">
+                <h1 class="brand-name">
+                    River<span class="brand-highlight">Side</span>
+                </h1>
+            </div>
+            <div class="search-container">
+                <div class="search-bar">
+                    <input type="text" autocomplete="on" placeholder="Enter your product name.." name="search-bar"
+                        class="search-bar-input" id="search-bar">
+                    <label class="search-icon-label" for="search-bar">
+                        <!-- Icon hereee -->
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </label>
+                </div>
+            </div>
+            <div class="user-menu-container">
+                <div class="user-profile-section">
+                    <div class="profile-pic-container">
+                        <i class="fa-regular fa-user"></i>
+                        <!-- <img class="user-image" src=""> -->
+                    </div>
+                    <p class="profile-name">Login</p>
+                    <a href="#" class="profile-dropdown">
+                        <i class="fa-solid fa-circle-chevron-down"></i>
+                        <!-- Login / Register -->
+                    </a>
+                </div>
+                <button type="button" name="wishlist-btn" id="wishlist-btn" class="wishlist-btn user-btn">
+                    <span class="material-symbols-outlined usmen-icon">
+                        favorite
+                    </span>
+                    <span class="wishlist-badge counter">
+                        99+
+                    </span>
+                </button>
+                <button type="button" name="cart-btn" id="cart-btn" class="cart-btn user-btn">
+                    <!-- Icon hereee -->
+                    <span class="material-symbols-outlined usmen-icon">
+                        local_mall
+                    </span>
+                    <span class="cart-badge counter">
+                        99+
+                    </span>
+                </button>
+            </div>
+        </header>
+        <section class="page-showcase">
+            <aside class="categories-list">
+                <ul class="categories">
+                    <li>
+                        Adventure stories
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </li>
+                    <li>
+                        Classics
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </li>
+                    <li>
+                        Crime
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </li>
+                    <li>
+                        Fairy tales, fables, and folk tales
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </li>
+                    <li>
+                        Fantasy
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </li>
+                    <li>
+                        Historical fiction
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </li>
+                    <li>
+                        Horror
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </li>
+                    <li>
+                        Humour and satire
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </li>
+                    <li>
+                        Dystopian
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </li>
+                    <li>
+                        Adventure
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </li>
+                    <li>
+                        Romance
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </li>
+                    <li>
+                        Biography
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </li>
+                    <li>
+                        Cooking
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </li>
+                    <li>
+                        Health & Fitness
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </li>
+                    <li>
+                        Motivational / Inspirational
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </li>
+                </ul>
+            </aside>
+            <div class="showcase-list">
+                <div class="main-showcase-item">
+                    <div class="item-details">
+                        <p>Limited Huge Offer</p>
+                        <p>Get the cheapest deals Up to 50% OFF</p>
+                        <p>Add to Wishlist <i class="fa-solid fa-angles-right"></i></p>
+                    </div>
+                    <div class="showcase-product-image">
+                        <img src="assets/images/books/56817071.jpg">
+                        <img src="assets/images/books/the-saints-of-swallow-hill.jpg">
+                        <img src="assets/images/books/71AgYK5mbrL._AC_UF1000,1000_QL80_.jpg">
+                    </div>
+                </div>
+                <div class="sub-showcase-items">
+                    <div class="showcase-sub-item">
+                        <div class="sub-showcase-text">
+                            <p>Get 3 Bookmarks for free</p>
+                            <p>Just get any promo bundles</p>
+                        </div>
+                        <img src="assets/images/extras/assorted-bm.png">
+                    </div>
+                    <div class="showcase-sub-item">
+                        <div class="sub-showcase-text">
+                            <p>Up to 30% OFF to any of our book bundles</p>
+                            <p>Bookmark</p>
+                        </div>
+                        <img src="assets/images/extras/black-bm.png">
+                    </div>
+                    <div class="showcase-sub-item">
+                        <div class="sub-showcase-text">
+                            <p>Buy 1 take 3 Bookmarks</p>
+                            <p>7 days left</p>
+                        </div>
+                        <img src="assets/images/extras/paper-bm.png">
+                    </div>
+                </div>
+            </div>
+            <aside class="user-about">
+                <div class="recent-view-container item">
+                    <p class="user-about-title">Recently Viewed</p>
+                    <div class="recent-view-content content">
+                        <div class="recent-view-item product">
+                            <img src="assets/images/books/mad-honey.jpg">
+                        </div>
+                        <a class="recent-view-btn" id="recent-view-btn" href="#">View your Browsing History</a>
+                    </div>
+                </div>
+                <div class="suggestion-container item">
+                    <p class="user-about-title">Suggestions for you</p>
+                    <div class="suggestion-content content">
+                        <div class="suggestion-item product">
+                            <img src="assets/images/books/theGiverOfStars.jpg">
+                        </div>
+                        <a class="suggestion-btn" id="suggestion-btn" href="#">See all Suggestions</a>
+                    </div>
+                </div>
+            </aside>
+        </section>
+        <section class="daily-deals-section">
+            <div class="daily-deals-header">
+                <div class="left">
+                    <span class="daily-deals-heading">
+                        Daily Deals
+                    </span>
+                    <div class="daily-deals-countdown">
+                        <div class="countdown">
+                            <span class="hours" id="hours">
+                                20
+                            </span>:
+                            <span class="minutes" id="minutes">
+                                45
+                            </span>:
+                            <span class="seconds" id="seconds">
+                                12
+                            </span>
+                        </div>
+                        <span>Left</span>
+                    </div>
+                </div>
+                <a href="#" class="viewAllDealsBtn">
+                    View All Deals
+                    <i class="fa-solid fa-chevron-right"></i>
+                </a>
+            </div>
+            <div class="daily-deals">
+                <div class="deals-item">
+                    <div class="product-image-container">
+                        <img src="assets/images/books/great-circle.jpg">
+                        <div class="discount-percentage">
+                            <i class="fa-solid fa-tag"></i>
+                            15% OFF
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <span class="genre" id="genre">Classic</span>
+                        <span class="title">Great Circle: A novel</span>
+                        <div class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="price-container">
+                            <span class="current-price">
+                                $14.99
+                            </span>
+                            <span class="original-price">
+                                $19.99
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="deals-item">
+                    <div class="product-image-container">
+                        <img src="assets/images/books/great-circle.jpg">
+                        <div class="discount-percentage">
+                            <i class="fa-solid fa-tag"></i>
+                            15% OFF
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <span class="genre" id="genre">Classic</span>
+                        <span class="title">Great Circle: A novel</span>
+                        <div class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="price-container">
+                            <span class="current-price">
+                                $14.99
+                            </span>
+                            <span class="original-price">
+                                $19.99
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="deals-item">
+                    <div class="product-image-container">
+                        <img src="assets/images/books/great-circle.jpg">
+                        <div class="discount-percentage">
+                            <i class="fa-solid fa-tag"></i>
+                            15% OFF
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <span class="genre" id="genre">Classic</span>
+                        <span class="title">Great Circle: A novel</span>
+                        <div class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="price-container">
+                            <span class="current-price">
+                                $14.99
+                            </span>
+                            <span class="original-price">
+                                $19.99
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="deals-item">
+                    <div class="product-image-container">
+                        <img src="assets/images/books/great-circle.jpg">
+                        <div class="discount-percentage">
+                            <i class="fa-solid fa-tag"></i>
+                            15% OFF
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <span class="genre" id="genre">Classic</span>
+                        <span class="title">Great Circle: A novel</span>
+                        <div class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="price-container">
+                            <span class="current-price">
+                                $14.99
+                            </span>
+                            <span class="original-price">
+                                $19.99
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="deals-item">
+                    <div class="product-image-container">
+                        <img src="assets/images/books/great-circle.jpg">
+                        <div class="discount-percentage">
+                            <i class="fa-solid fa-tag"></i>
+                            15% OFF
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <span class="genre" id="genre">Classic</span>
+                        <span class="title">Great Circle: A novel</span>
+                        <div class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="price-container">
+                            <span class="current-price">
+                                $14.99
+                            </span>
+                            <span class="original-price">
+                                $19.99
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="deals-item">
+                    <div class="product-image-container">
+                        <img src="assets/images/books/great-circle.jpg">
+                        <div class="discount-percentage">
+                            <i class="fa-solid fa-tag"></i>
+                            15% OFF
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <span class="genre" id="genre">Classic</span>
+                        <span class="title">Great Circle: A novel</span>
+                        <div class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="price-container">
+                            <span class="current-price">
+                                $14.99
+                            </span>
+                            <span class="original-price">
+                                $19.99
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="deals-item">
+                    <div class="product-image-container">
+                        <img src="assets/images/books/great-circle.jpg">
+                        <div class="discount-percentage">
+                            <i class="fa-solid fa-tag"></i>
+                            15% OFF
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <span class="genre" id="genre">Classic</span>
+                        <span class="title">Great Circle: A novel</span>
+                        <div class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="price-container">
+                            <span class="current-price">
+                                $14.99
+                            </span>
+                            <span class="original-price">
+                                $19.99
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="deals-item">
+                    <div class="product-image-container">
+                        <img src="assets/images/books/great-circle.jpg">
+                        <div class="discount-percentage">
+                            <i class="fa-solid fa-tag"></i>
+                            15% OFF
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <span class="genre" id="genre">Classic</span>
+                        <span class="title">Great Circle: A novel</span>
+                        <div class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="price-container">
+                            <span class="current-price">
+                                $14.99
+                            </span>
+                            <span class="original-price">
+                                $19.99
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="deals-item">
+                    <div class="product-image-container">
+                        <img src="assets/images/books/great-circle.jpg">
+                        <div class="discount-percentage">
+                            <i class="fa-solid fa-tag"></i>
+                            15% OFF
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <span class="genre" id="genre">Classic</span>
+                        <span class="title">Great Circle: A novel</span>
+                        <div class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="price-container">
+                            <span class="current-price">
+                                $14.99
+                            </span>
+                            <span class="original-price">
+                                $19.99
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="deals-item">
+                    <div class="product-image-container">
+                        <img src="assets/images/books/great-circle.jpg">
+                        <div class="discount-percentage">
+                            <i class="fa-solid fa-tag"></i>
+                            15% OFF
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <span class="genre" id="genre">Classic</span>
+                        <span class="title">Great Circle: A novel</span>
+                        <div class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="price-container">
+                            <span class="current-price">
+                                $14.99
+                            </span>
+                            <span class="original-price">
+                                $19.99
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="deals-item">
+                    <div class="product-image-container">
+                        <img src="assets/images/books/great-circle.jpg">
+                        <div class="discount-percentage">
+                            <i class="fa-solid fa-tag"></i>
+                            15% OFF
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <span class="genre" id="genre">Classic</span>
+                        <span class="title">Great Circle: A novel</span>
+                        <div class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="price-container">
+                            <span class="current-price">
+                                $14.99
+                            </span>
+                            <span class="original-price">
+                                $19.99
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="deals-item">
+                    <div class="product-image-container">
+                        <img src="assets/images/books/great-circle.jpg">
+                        <div class="discount-percentage">
+                            <i class="fa-solid fa-tag"></i>
+                            15% OFF
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <span class="genre" id="genre">Classic</span>
+                        <span class="title">Great Circle: A novel</span>
+                        <div class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="price-container">
+                            <span class="current-price">
+                                $14.99
+                            </span>
+                            <span class="original-price">
+                                $19.99
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="deals-item">
+                    <div class="product-image-container">
+                        <img src="assets/images/books/great-circle.jpg">
+                        <div class="discount-percentage">
+                            <i class="fa-solid fa-tag"></i>
+                            15% OFF
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <span class="genre" id="genre">Classic</span>
+                        <span class="title">Great Circle: A novel</span>
+                        <div class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="price-container">
+                            <span class="current-price">
+                                $14.99
+                            </span>
+                            <span class="original-price">
+                                $19.99
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="shopping-vouchers-container">
+            <div class="vouchers-header">
+                <p class="vouchers-heading">
+                    Available Vouchers for you and more
+                </p>
+            </div>
+            <div class="vouchers">
+                <div class="voucher">
+                    <div class="icon-container">
+                        <span class="material-symbols-outlined">
+                            confirmation_number
+                        </span>
+                    </div>
+                    <div class="voucher-details">
+                        <p class="voucher-label">
+                            15% OFF DISCOUNT
+                        </p>
+                        <div class="voucher-btn">
+                            <button type="button" class="get-voucher-button">
+                                Get
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="voucher">
+                    <div class="icon-container">
+                        <span class="material-symbols-outlined">
+                            monetization_on
+                        </span>
+                    </div>
+                    <div class="voucher-details">
+                        <p class="voucher-label">
+                            UP TO 10% CASHBACK
+                        </p>
+                        <div class="voucher-btn">
+                            <button type="button" class="get-voucher-button">
+                                Get
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="voucher">
+                    <div class="icon-container">
+                        <span class="material-symbols-outlined">
+                            local_shipping
+                        </span>
+                    </div>
+                    <div class="voucher-details">
+                        <p class="voucher-label">
+                            FREE SHIPPING
+                        </p>
+                        <div class="voucher-btn">
+                            <button type="button" class="get-voucher-button">
+                                Get
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <main class="daily-discover-container">
+            <p class="daily-discover-heading">
+                Your Daily Discover
+            </p>
+            <div class="daily-discover-holder">
+                <div class="daily-discover">
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image-container">
+                            <p class="product-tag">New</p>
+                            <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                        </div>
+                        <div class="product-details-container">
+                            <span class="genre">CLASSIC</span>
+                            <span class="title">The House In The Pines</span>
+                            <div class="ratings">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="price">$9.99</span>
+                                <span class="soldCount">1.3k+ sold</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="seemore-btn">
+                <a href="#">See more
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+            </p>
+        </main>
+    </div>
+    <footer class="page-footer">
+        <div class="upper">
+            <div class="sitemap-box">
+                <span class="sitemap-heading">
+                    Sitemap
+                </span>
+                <ul class="sitemap">
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            Back to top
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            Daily Deals
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            Discover
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-chevron-right"></i>
+                            About us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <span class="follow-heading">
+                    Follow Us
+                </span>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            <div class="contact-box">
+                <span class="contact-heading">
+                    Contact us
+                </span>
+                <ul class="contacts">
+                    <li>Address: Alabang - Zapote Rd Las Piñas City Metro Manila Philippines</li>
+                    <li>Phone: +63 987 2564 174</li>
+                    <li>Email: RiverSide@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="lower">
+            <ul class="footer-navigation">
+                <li>
+                    <a href="#">
+                        Privacy and Policy
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Terms and Conditions
+                    </a>
+                </li>
+            </ul>
+            <p class="copyright-text">
+                Copyright &copy; 2023 by RiverSide | Design by <span
+                    style="color:var(--pinkish); font-family: 'Quicksand', sans-serif;">Archie Cedeño Sevillano</span>.
+                All rights reserved. </p>
+        </div>
+    </footer>
+
+    <!-- Modal Box Start -->
+
+    <section class="modal-area" id="modal-obj">
+        <form action="checkout.html" name="select-order-form" autocomplete="off" class="product-box">
+            <nav class="floating-nav">
+                <button type="button" title="Go back" class="goback-btn" id="goback-btn">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <button type="button" title="Check our store near your place" class="goback-btn" id="goback-btn">
+                    <i class="fa-solid fa-store"></i>
+                </button>
+            </nav>
+            <div class="product-image-container">
+                <div class="product-image-view">
+                    <img src="assets/images/books/theNursesSecret.jpg">
+                </div>
+                <div class="product-image-list">
+                    <div class="product-image-item">
+                        <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                    </div>
+                    <div class="product-image-item">
+                        <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                    </div>
+                    <div class="product-image-item">
+                        <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                    </div>
+                    <div class="product-image-item">
+                        <img src="assets/images/books/the-house-in-the-pines-2.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="product-details">
+                <h3 class="product-name" id="pb-product-name">Adventure of Papaya</h3>
+                <div class="product-subhead">
+                    <i class="fa-solid fa-feather"></i>
+                    <span class="author-name" id="pb-author-name">
+                        <a href="#">Kim Alangcao Emerut</a>
+                    </span>
+                    <span class="publish-date" id="pb-publish-date"> &bull; Published on July 02, 2021</span>
+                </div>
+                <div class="product-ratings" id="pb-product-ratings">
+                    <div class="star-ratings" id="pb-star-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <span class="product-rating-value" id="pb-product-rating-value">
+                        4/5
+                    </span>
+                    <span class="product-review" id="pb-product-review">
+                        (2,005 reviews)
+                    </span>
+                </div>
+                <div class="user-action-buttons">
+                    <button type="button" class="addToWishList-btn" id="pb-addToWishList-btn">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <button type="button" class="message-btn" id="pb-message-btn">
+                        <i class="fa-regular fa-message"></i>
+                    </button>
+                    <button type="button" class="share-btn" id="pb-share-btn">
+                        <i class="fa-regular fa-share-from-square"></i>
+                    </button>
+                    <button type="button" class="report-btn" id="pb-report-btn">
+                        <i class="fa-regular fa-flag"></i>
+                    </button>
+                </div>
+                <div class="product-description-container">
+                    <h3 class="descriptionHeadng">
+                        Description
+                    </h3>
+                    <p class="product-description-content" id="product-description-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum assumenda nisi voluptate
+                        itaque! Ullam voluptates commodi similique odit minima velit, nemo itaque? Exercitationem
+                        officiis ullam aspernatur, reiciendis consequatur dolores a cum libero? Quas sapiente placeat
+                        dolorem pariatur excepturi alias. Eius earum perspiciatis fugiat ad quo minus harum tempora rem
+                        rerum quia consequatur sint hic, quaerat corrupti dolores, repellat, pariatur consequuntur.
+                    </p>
+                </div>
+                <div class="main-action-container">
+                    <div class="price-container">
+                        <span>Suggested Retail Price</span>
+                        <span class="pb-product-price">$11.99</span>
+                        <span>3.5k+ sold</span>
+                    </div>
+                    <div class="action-container">
+                        <button type="button" class="addToCartBtn" id="pb-addToCartBtn">
+                            Add to cart
+                        </button>
+                        <input type="submit" class="buyNow" id="pb-buyNow" value="Buy Now">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <!-- Modal Box End -->
+
+</body>
+
+</html>
