@@ -1925,3 +1925,50 @@ body::-webkit-scrollbar-track {
     }
 
 }
+
+@media (max-width: 380px) {
+    .daily-deals-section .daily-deals-header .daily-deals-heading {
+        padding: 10px;
+    }
+
+    .shopping-vouchers-container .vouchers-header .vouchers-heading,
+    .daily-discover-container .daily-discover-heading {
+        text-align: center;
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    .shopping-vouchers-container {
+        display: none;
+    }
+
+    .page-footer .upper .sitemap-box {
+        transform: translateX(0);
+        text-align: center;
+    }
+
+    .page-footer .upper {
+        grid-template-columns: 40% 60%;
+        column-gap: 10px;
+    }
+
+
+    .page-footer {
+        grid-template-rows: 1fr 50%;
+    }
+
+    .modal-area .product-box .product-details {
+        padding: 20px;
+    }
+
+    .modal-area .product-box {
+        width: 100%;
+    }
+
+    .modal-area .product-box .product-details .action-container button,
+    .modal-area .product-box .product-details .action-container input[type=submit] {
+        width: 100px;
+    }
+
+
+}
