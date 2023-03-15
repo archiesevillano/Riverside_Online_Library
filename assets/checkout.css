@@ -525,3 +525,39 @@ body {
         width: 40%;
     }
 }
+
+@media (max-width: 450px) {
+
+    .form-container {
+        padding: 10px;
+    }
+
+    .order-summary-container {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .payment-method-header {
+        justify-items: flex-start;
+    }
+
+    .form-subheading,
+    .selected-payment-method {
+        flex-grow: 0;
+        display: inline-block;
+    }
+
+    .payment-methods,
+    .payment-method {
+        padding: 0;
+    }
+
+    .checkout-btn-container p {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .checkout-btn {
+        width: 100%;
+    }
+}

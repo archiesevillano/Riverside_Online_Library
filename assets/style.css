@@ -1406,7 +1406,7 @@ body::-webkit-scrollbar-track {
     .modal-area .product-box {
         flex-direction: column;
         width: 500px;
-        height: 700px;
+        height: 800px;
     }
 
     .modal-area .product-box .product-image-container {
@@ -1674,21 +1674,25 @@ body::-webkit-scrollbar-track {
     .page-footer .upper .social-links {
         width: 80%;
     }
-}
-
-@media (max-width: 800px) {
 
     .page-header {
         grid-template-columns: 1fr 40%;
     }
 
-    .page-showcase {
-        display: none;
-    }
 
     .page .brand-container {
         display: none;
     }
+}
+
+@media (max-width: 800px) {
+
+
+    .page-showcase {
+        display: none;
+    }
+
+
 
     .page-footer {
         grid-template-rows: 1fr 22%;
@@ -1752,9 +1756,53 @@ body::-webkit-scrollbar-track {
     .page-footer .upper .sitemap-box {
         transform: translateX(20px);
     }
+
+    .page-footer .lower .footer-navigation {
+        width: 30%;
+    }
 }
 
 @media (max-width: 600px) {
+    .page {
+        padding: 10px;
+    }
+
+    .page-header {
+        grid-template-columns: 70% 30%;
+        column-gap: 10px;
+        height: 10vh;
+        padding: 15px;
+    }
+
+
+    .page-header .user-menu-container {
+        justify-self: right;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .page-header .user-menu-container .user-profile-section {
+        display: none;
+    }
+
+    .daily-deals-section {
+        padding: 0;
+        border: none;
+    }
+
+    .shopping-vouchers-container {
+        padding: 40px 0;
+    }
+
+    .vouchers-heading,
+    .daily-discover-heading,
+    .daily-deals-heading {
+        padding: 20px;
+    }
+
 
     .daily-deals-section .daily-deals-header .viewAllDealsBtn {
         padding: 0px;
@@ -1773,4 +1821,107 @@ body::-webkit-scrollbar-track {
         width: 50%;
         text-align: right;
     }
+
+    .page-footer .upper .social-links {
+        display: none;
+    }
+
+    .page-footer .upper .sitemap-box {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .page-footer .upper .contact-box {
+        padding: 10px 0 0 0;
+        width: 60%;
+    }
+
+    .page-footer .upper .contact-box .contacts li {
+        margin: 20px 0;
+    }
+
+    .page-footer {
+        display: grid;
+        grid-template-rows: 1fr 30%;
+        width: 100%;
+        height: 25vh;
+    }
+
+    .page-footer .upper {
+        grid-template-columns: 50% 50%;
+        column-gap: 10px;
+    }
+
+    .modal-area .product-box .product-details {
+        padding: 20px 20px;
+    }
+
+
+
+}
+
+@media (max-width: 500px) {
+    .page {
+        padding: 0;
+    }
+
+    .page-header {
+        grid-template-columns: 60% 40%;
+        height: 10vh;
+        padding: 15px;
+    }
+
+    .daily-deals-section .daily-deals-header {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: left;
+    }
+
+    .daily-deals-section .daily-deals-header .left {
+        align-items: left;
+        justify-content: left;
+    }
+
+
+
+    .daily-deals-section {
+        padding: 0;
+        border: none;
+    }
+
+    .shopping-vouchers-container {
+        padding: 40px 0;
+    }
+
+    .countdown {
+        padding: 0;
+    }
+
+    .daily-discover-container {
+        padding: 0;
+    }
+
+
+}
+
+@media (max-width: 420px) {
+    .page-header .search-container .search-bar .search-icon-label {
+        display: none;
+    }
+
+    .shopping-vouchers-container .vouchers-header .vouchers-heading,
+    .daily-discover-container .daily-discover-heading {
+        text-align: center;
+        font-size: 25px;
+    }
+
+
+    .modal-area .product-box .product-details {
+        padding: 20px;
+    }
+
+    .modal-area .product-box {
+        width: 100%;
+    }
+
 }
